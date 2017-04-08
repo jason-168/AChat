@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_menu_contacts"
+            android:title="好友" />
+        <item
+            android:id="@+id/nav_devices"
+            android:icon="@drawable/ic_menu_devices"
+            android:title="设备" />
+        <item
+            android:id="@+id/nav_push"
+            android:icon="@drawable/ic_push"
+            android:title="推送" />
+        <item
+            android:id="@+id/nav_storage"
+            android:icon="@drawable/ic_cloud"
+            android:title="云存储" />
+    </group>
+
+    <item android:title="Helps" >
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_gallery"-->
+                <!--android:icon="@drawable/ic_menu_gallery"-->
+                <!--android:title="Gallery" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_slideshow"-->
+                <!--android:icon="@drawable/ic_menu_slideshow"-->
+                <!--android:title="Slideshow" />-->
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings"
+                android:title="设置" />
+        </menu>
+    </item>
+
+</menu>

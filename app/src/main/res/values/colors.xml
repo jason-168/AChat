@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F9D58</color>
+    <color name="colorPrimaryDark">#0B8043</color>
+    <color name="colorAccent">#0F9D58</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="search_layover_bg">#50000000</color>
+
+    <color name="theme_primary_text_inverted">#ffffff</color>
+    <color name="theme_secondary_text_inverted">#8affffff</color>
+
+    <color name="mc_view_progress_bg">#00b2ff</color>
+    <color name="mc_view_progress_first">#ffffff</color>
+    <color name="mc_view_progress_second">#6b6666</color>
+</resources>

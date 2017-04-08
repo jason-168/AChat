@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="adapter"
+            type="android.support.v7.widget.RecyclerView.Adapter" />
+    </data>
+
+    <RelativeLayout android:id="@+id/activity_device_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sl.achat.DevicePreviewActivity">
+
+        <RelativeLayout
+            android:id="@+id/player_window"
+            android:layout_width="match_parent"
+            android:layout_height="220dip">
+
+            <RelativeLayout
+                android:id="@+id/video_window0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></RelativeLayout>
+
+            <com.sl.achat.MediaControllerView
+                android:id="@+id/mc_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player_window">
+
+            <LinearLayout
+                android:id="@+id/rateLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/textview0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#aaffffff"
+                    android:gravity="right|center_vertical"
+                    android:text="a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="info"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rateLayout"
+                android:background="@android:color/background_light"
+                android:clipToPadding="false"
+                android:fadeScrollbars="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:scrollbars="vertical"
+                app:adapter="@{adapter}"
+                app:layoutManager="LinearLayoutManager">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
